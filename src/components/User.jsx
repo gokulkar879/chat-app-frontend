@@ -5,7 +5,7 @@ import { useUserContext } from '../UserContext';
 function User() {
   const [isHovering, setisHovering] = useState(false); 
   const [avatar, setAvatar] = useState('');
-  const {setUser} = useUserContext();
+  const {setUser, user} = useUserContext();
 
   const handleChange = ev => {
     const file = ev.target.files[0];
@@ -49,7 +49,7 @@ function User() {
               </label> : <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg"></img>
             }
           </div>
-            <p className='user-name'>Gokul</p>
+            <p className='user-name'>{user && user.username}</p>
         </div>
     </div>
   )

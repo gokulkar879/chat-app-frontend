@@ -9,6 +9,7 @@ const socket = io('https://chat-app-backend-3kda.onrender.com', {
     autoConnect: false
 });
 
+
 function HomePage() {
     
     const [contacts, setContacts] = useState([]);
