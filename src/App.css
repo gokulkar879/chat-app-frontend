@@ -1,0 +1,362 @@
+/* homePage */
+.home {
+   display: flex;
+   height: 100vh;
+}
+
+.home-sidebar {
+   flex: .3;
+   border-right: 1px solid #777777;
+   padding: 20px;
+   height: 100vh;
+
+}
+
+.home-conversation {
+    flex: .7;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+   padding: 2px;
+   border: 1px solid rgb(235, 150, 150);
+}
+
+/* SingleContact */
+.contact {
+   display: flex;
+   padding-top: 10px;
+   padding-left: 20px;
+   padding-right: 20px;
+   padding-bottom: 10px;
+   background-color: #EEF0F2;
+   cursor: pointer;
+}
+
+.contact img {
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+}
+
+.contact-info {
+   
+}
+
+.contact-name {
+   font-size: .94rem;
+   font-weight: 600;
+}
+
+.contact-lastMessage {
+   font-size: .8rem;
+   color: #606060;
+}
+
+/* User */
+.user {
+   border: 1px solid #777777;
+   border-radius: 20px;
+   overflow: hidden;
+   margin-top: 5px;
+   margin-bottom: 10px;
+}
+
+.user-header {
+   padding: 8px;
+   display: flex;
+   align-items: center;
+   border-bottom: 1px solid #777777;
+}
+
+.user-header > p {
+  flex: 1;
+  font-weight: bold;
+  font-size: 1.1rem;
+  letter-spacing: 1.1px;
+}
+
+.user-header > button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 40px;
+   height: 40px;
+   font-size: 1.5rem;
+   color: rgb(56, 56, 56);
+   border-radius: 50%;
+   border: 1px solid #777777;
+}
+
+.user-info {
+   padding: 8px;
+   display: flex;
+   align-items: center;
+   min-height: 85px;
+   background-color:  #EEF0F2;
+   border-bottom-left-radius: 20px;
+   border-bottom-right-radius: 20px;
+}
+
+.user-info > p {
+   margin-left: 25px;
+   font-size: 1.35rem;
+   letter-spacing: 1.1px;
+   font-weight: bold;
+}
+
+/* contacts */
+.contacts {
+    border: 1px solid #777777;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 1px;
+}
+
+.contacts-header {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #777777;
+}
+
+.contacts-header > p {
+    flex: 1;
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 1.1px;
+  }
+  
+.contacts-header > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    color: rgb(56, 56, 56);
+    border-radius: 50%;
+    border: 1px solid #777777;
+}
+
+.contacts-info {
+   max-height: 450px;
+   overflow-y: scroll;
+}
+
+/* /// */
+.conversation-user {
+   padding-left: 4rem;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   border-bottom: 1px solid #777777;
+   flex: .2;
+}
+
+.conversation-user > p {
+   margin-bottom: 20px;
+   font-size: 2.5rem;
+   letter-spacing: 2px;
+   font-weight: bold;
+}
+
+.conversation-user-info {
+    display: flex;
+    align-items: center;
+}
+
+.conversation-user-info > p {
+   margin-left: 20px;
+   font-size: 1.1rem;
+   font-weight: 600;
+}
+
+.conversation-user-info > img{
+
+}
+
+/* chat */
+.chat {
+    background-color: #EEF0F2;
+    flex: .8;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.chat-center {
+    background-color: #EEF0F2;
+    flex: .92;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+}
+
+.text-form {
+   border-radius: 30px;
+   padding: 2px;
+   border: 1px solid #777777;
+   margin-top: 10px;
+}
+
+.text-form > label {
+    display: flex;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.text-form > label > img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px; 
+}
+
+.text-form > label > input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.text-form > label > button {
+    border-radius: 30px;
+    margin-left: 10px;
+    min-width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.05rem;
+    padding: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border: 1px solid #777777;
+    background-color: #2886FF;
+    color: rgb(242, 241, 241);
+}
+
+/* Message  */
+.message {
+    max-width: 400px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.message.left {
+    background-color: #30353C;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    word-break: break-all;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.message.right {
+    background-color: #2886FF;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    word-break: break-all;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    align-self: flex-end;
+}
+
+.msg-img {
+   width: 150px;
+   height: 150px;
+}
+
+/* RegisterPage */
+.register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.register-form {
+   border: 1px solid #777777;
+   display: flex;
+   flex-direction: column;
+   border-radius: 15px;
+   min-width: 350px;
+   overflow: hidden;
+}
+
+.register-form > div {
+   height: 50px;
+   border-bottom: 1px solid #777777;
+   background-color: #EEF0F2;
+}
+
+.register-form > label {
+  margin: 7px 0;
+  padding: 10px;
+}
+
+.register-form > label > p {
+   font-size: 1.1rem;
+   letter-spacing: 1.1px;
+   font-weight: 600;
+   margin-bottom: 7px;
+}
+
+.register-form > label > input {
+  width: 100%;
+  padding: 5px;
+  font-size: 1.05rem;
+  letter-spacing: 1.05px;
+  color: #30353C;
+  border-radius: 8px;
+  border: 1px solid #777777;
+}
+
+.register-form button {
+
+   width: 96%;
+   margin: 0 auto;
+   margin-bottom: 10px;
+   font-size: 1.1rem;
+   padding: 5px;
+   background-color: #2886FF;
+   color: #EEF0F2;
+   border: 1px solid #777777;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+.avatar-div {
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+}
+
+.avatar-div .avatar {
+   cursor: pointer;
+   width: 60px;
+   height: 60px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 2rem;
+   background-color: #777777;
+   border-radius: 50%;
+}
+
+.avatar-input {
+   width: 1px;
+   height: 1px;
+}
