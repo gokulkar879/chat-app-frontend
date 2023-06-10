@@ -17,7 +17,7 @@ function User() {
       credentials: 'include'
     }
 
-    fetch('http://localhost:5000/user', requestOptions)
+    fetch('https://chat-app-backend-3kda.onrender.com/user', requestOptions)
        .then(res => res.json())
        .then(data => {
            console.log(data);

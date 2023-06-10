@@ -7,7 +7,7 @@ const UserProvider = ({children}) => {
 
     useEffect(() => {
         console.log('p');
-        fetch('http://localhost:5000',{
+        fetch('https://chat-app-backend-3kda.onrender.com',{
             credentials: 'include'
         }).then(res => res.json())
           .then(data => {

@@ -5,7 +5,7 @@ import Message from '../components/Message';
 import Form from '../components/Form.jsx';
 import {io} from 'socket.io-client';
 import { useUserContext } from '../UserContext';
-const socket = io('http://localhost:5000', {
+const socket = io('https://chat-app-backend-3kda.onrender.com', {
     autoConnect: false
 });
 

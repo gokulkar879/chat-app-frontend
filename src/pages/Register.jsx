@@ -11,7 +11,7 @@ function Register() {
 
         if(!username || !password) return;
 
-        fetch('http://localhost:5000', {
+        fetch('https://chat-app-backend-3kda.onrender.com', {
             method: 'POST',
             headers: {
                 "Content-type": "application/json"
